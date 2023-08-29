@@ -1,0 +1,25 @@
+HIVE:
+
+-->Data Warehouse is the place where all types of databases and files are stored.
+-->Hive stores metadata of the table like table structure,location etc in its local database known as derby Metastore.
+-->Hive stores Data in Hadoop and is a SQL Server built on top of Hadoop.
+-->Hive queries data from the HDFS Tables.
+-->A table is nothing but a HDFS Directory with files.
+-->A table's structure and location are to be specified when creating the table in hive.
+-->Only Cloudera provides a web interface called Hue to the users.
+-->Command line interfaces of Hive are Beeline and JDBC/ODBC Servers
+-->Hive can do cross platform operations/application developement using thrift servers like
+-->Hive's driver compiles,optimizes and executes operations.
+-->Hive does not include write/update operation and can only perform read operations.
+-->When you load data from hadoop into hive,hive extracts the data and stores the files/data into another new 
+   location within the hadoop system in a different director or location which will be different from the original 
+   location of the files/data and the new location will depend on Hive's internal structure and settings.
+   This happens only for the Hive's Internal Tables.The Internal Tables are called Managed Tables.
+-->To solve this problem we can create and use a Hive External Table.
+-->There are two types of partition in Hive namely Static and Dynamic.
+-->Output of Map Reduce is Parquet File.
+-->Instead of manually defining each partition in a table, dynamic partitioning allows the system to automatically
+   create partitions based on the distinct values in a specified column. This can significantly reduce the 
+   administrative overhead of managing partition metadata.
+-->Dynamic partitioning can greatly enhance query performance. 
+

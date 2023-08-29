@@ -1,0 +1,30 @@
+--> Spark is a distributed cluster computing platform which competes with the Map Reduce Feature ('YARN') of Hadoop.
+--> Spark is written in Scala which is a functional programming language.
+--> Its features include real time streaming of data,iterative programs,unifying real time and batch processing and iterative querying.
+--> Spark can be 100 times more faster than Map Reduce because spark processes its data in memory.
+--> Spark can run anywhere there is a clustered environment like hadoop cluster,mesoso or in the cloud. and can access diverse data sources including HDFS,
+    Cassandra,HBase and AmazonS3.
+--> It also provides Machine Learning and Deep Learning Libraries to work with on the data.
+--> Worker Nodes are the Data Nodes counterpart of Spark and each Worker Node has an Executor which runs the tasks.
+--> The Driver Program is like the Application Manager in Hadoop Map Reduce which negotiates with the Cluster Manager which is like the Name Node in
+    Hadoop to allocate some amount of memory for each Worker Node to perform each task.
+--> The Driver Program allots the tasks to the Worker Node and this Driver Program has a context called SparkContest.
+--> Unlike in Hadoop where we run multiple mappers on different machines simultaneously to process different blocks of data and then aggregate them,in Spark
+    the memory of three machines are aggregated in one machine and the entire process is run on one machine instead of using different mappers to read the
+    different blocks of data and then aggregate them.
+--> RDD (Resilient Distributed Database/Datastructure/Datasets) has two components namely transformations and Actions.The Actions and Transformations have a 
+    Directed Acyclic Graphs which is a logical plan of action.
+--> You cannot edit an existing RDD,one RDD can result in another RDD.We can only creat an RDD from an existing RDD.
+--> Scala supports and uses lazy evaluation programs to reduce the number of passes and to reduce the complexity of the process.
+--> Spark has three different systems in which we can execute it,namely RDD,DataFrames(built on top of Pandas) and Datasets.Dataframes are easier to use 
+    and is more common,while RDD is completely not being used nowadays.
+--> Each Transformation creates a new RDD and does not affect the existing RDD.
+--> When we persist an RDD,the data is stored/kept in memory on the nodes and thus preventing an unnecessary re-computing or re-constructing.
+--> Shared Variables is of two types broadcast(to show or display a variable) and accumulator(for aggregating),these variables can be present in different
+    partitions.
+--> Broadcasting is like the Joins in SQL,where we are not creating any phscical data or connections but just projecting the data.
+--> Dataframes are very straightforward compared to RDD.
+--> py4j is used to convert the python built library which allows python programs including SparkContext to access Java Objects and Methods.It facilitates
+    communication between Python and Java by allowing Python programs to call Java code and vice versa
+--> RDD.Persist() stores the cache of the RDD in the memory.
+--> RDD is just another datastructure like DataFrames,but now it's not in use much and apache spark does not recognise it.
