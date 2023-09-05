@@ -1,0 +1,10 @@
+1.First open terminal and start mysql or install it if it has not been installed before.
+2.If the system is ubuntu,do this to start mysql:
+  1.sudo apt update
+  2.sudo apt install mysql-server
+  3.sudo service mysql start
+  4.mysql -u root -p (password for root is root)
+  5.show databases;
+  6.Perform further processes
+3.Run the Pyspark code to create or modify tables there.(Make sure the jar paths are correct)
+Refer to the code : https://github.com/Harikrishna2461/Data-Engineering-and-Big-Data/blob/main/Running_SQL_IN_PYSPARK.ipynb
